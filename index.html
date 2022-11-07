@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+<meta charset="UTF-8"><!--Abaixo no style chamamos todas as tags e classes para estilizar-->
+<style>
+    
+    body {
+        
+        background: rgb(215, 206, 206);
+        margin: 50px;
+        font-family: "Georgia";
+    }
+
+    a span{
+        background-color: orange;
+        color:#000000;
+        font-weight: bold;
+        border: 1px solid #000000;
+        border-radius: 8px;
+        text-align: center;
+        padding:5px 10px 5px 10px;
+        margin: 10px;
+       
+    }
+
+    .servicos{
+        background-color: orange;
+        color:#000000;
+        font-weight: bold;
+        border: 2px solid #000000;
+        border-radius: 8px;
+        margin-bottom: auto;
+        text-align: center;   
+
+    }
+
+    p{
+        color:#000000 50px;
+        font-weight: bold;
+        text-align: left;
+        padding:5px 10px 5px 10px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+               
+    }
+    
+    .logo  {
+        display:block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 30%;
+  
+     }
+                                    
+    .gallery {
+        background-color: rgb(241, 234, 234);
+        image-orientation: inherit ;
+        margin: 40px;
+        border: 2px solid orange;
+        float: left;
+        width: 260px;
+    }
+
+    .gallery img {
+        width: 100%;
+        height: auto;
+    }
+    .gallery span {
+        padding: 10px;
+        margin: 5px;
+        float:inherit;
+    }
+    .desc{
+        font-weight: lighter;
+        padding: 15px;
+        text-align:inherit;
+    
+    }
+
+    .menu{
+        list-style: none;
+        display: flex;
+    }
+    .menu li{
+        font-size: 18px;
+        justify-content: center;
+        align-items: center;
+    }
+    .menu li:last-child{
+        margin-left: 40px;
+    }
+
+    element.style {
+        background-color: green;
+      
+    }
+
+    .btn:not(:disabled):not(.disabled) {
+        cursor: pointer;
+    }
+
+    .btn-xl {
+        padding: 1.25rem 2.5rem;
+        font-family: "Montserrat", BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        font-size: 1.125rem;
+        font-weight: 700;
+        padding:5px 10px 5px 10px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    
+    o{  
+        color:#000000;
+        font-weight: bold;
+        border: 2px solid #000000;
+        border-radius: 30px;
+        margin-bottom: auto;
+        text-align: center; 
+    } 
+
+    ol{
+        background-color: rgb(241, 234, 234);
+        margin: 80px;
+        border: 2px solid orange;
+        float: left;
+        width: 1500px;
+    }
+
+</style>
+</head>
+
+<body>
+    <div> <!--Header do site -->
+    
+        <p> EMPRESA DE PRESTAÇÃO DE SERVIÇOS </p>
+        <nav class="servicos"> 
+            <ul class="menu"> <!--Criado barra de navegação-->
+                <li><a href="#empresa">Empresa</a></li> 
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+
+
+        <div class="prev_tempo"> <!--Anexado botão que abre link em outra aba da previsão do tempo de pinhalzinho-->
+            <a
+                data-t="{&quot;n&quot;:&quot;MapCardClickSeeMoreForecastButton&quot;,&quot;b&quot;:1}" 
+                class="button" 
+                href="https://www.msn.com/pt-br/clima/forecast/in-Pinhalzinho,Santa-Catarina?loc=eyJsIjoiUGluaGFsemluaG8iLCJyIjoiU2FudGEgQ2F0YXJpbmEiLCJjIjoiQnJhc2lsIiwiaSI6IkJSIiwiZyI6InB0LWJyIiwieCI6Ii01Mi45NzYxMDA5MjE2MzA4NiIsInkiOiItMjYuODIwMTk4MDU5MDgyMDMifQ%3D%3D&amp;weadegreetype=C&amp;ocid=msedgdhp" 
+                target="_blank" title="Ver a previsão completa">
+            <span>Previsão do tempo Pinhalzinho/SC </span>
+            </a>
+        </div>
+
+        <img src="logo.jpg.png" class="logo" /><!--Anexado imagem da logo marca no header-->
+
+        <div><!--Botão de acesso do whattsapp link direto descktop-->
+            <o class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="https://web.whatsapp.com/" 
+                style="background-color: green;"> Whatsapp 
+            <i class="fa fa-whatsapp pulse2"></i></o>
+        </div>
+
+    </div><!--fim header do site -->
+
+    <div><!--Corpo do site-->
+        <h1 class="servicos">SERVIÇOS </h1><!--Barra de serviços-->
+
+        
+        <div class="gallery"><!--Onde cada imagem foi anexada e o seu descritivo de serviços (igual para todas as "gallery")-->
+            <img src="eletrica.jpg"  width="1100" height="900" />
+            <span class="desc">Instalações elétricas residenciais, prediais e industriais.</span>
+        </div>
+        
+        <div class="gallery">
+            <img src="hidraulica.jpg" width="1100" height="900" />
+            <span class="desc">Instalações hidráulicas de água fria, água quente, plúvial e esgoto.</span>
+        </div>
+        
+        <div class="gallery">
+            <img src="hidrante.jpg" width="1100" height="900" />
+            <span class="desc">Instalações de hidrantes, alarme de incêncio, Iluminação de emergencia, extintores e Para-raios.</span>
+        </div>
+        
+        <div class="gallery">
+            <img src="gas.jpg" width="1100" height="900" />
+            <span class="desc">Instalação de tubulações de gás residencial, predial e industrial.</span>
+        </div>
+
+        <div class="gallery">
+            <img src="climatizacao.jpg" width="1100" height="900" />
+            <span class="desc">Instalação e manutenção de Climatizadores.</span>
+        </div>
+    </div><!--Fim corpo do site-->
+    
+    <div><!-- Footer do site-->
+        
+        <div>
+            <ol name="empresa"><br> <!--Descritivo de cada item da barra de navegação-->
+                SOBRE A EMPRESA<br>
+                <br>
+                A TOPLUZ detém ampla experiência na área de instalações elétricas e hidráulicas residenciais, prediais e indústriais. 
+                Fundada em 31 de Maio de 2017, solidificou-se no mercado,conquistando confiança e credibilidade através de soluções 
+                adequadas e customizadas às necessidades, ambientes e porte  de cada um de seus clientes. Aliando transparência nas ações,
+                respeito aos clientes, valorização dos colaboradores, espírito empreendedor e permanente atualização tecnológica, a TOPLUZ 
+                faz do seu nome a diferença em seus serviços com agilidade e qualidade nos seus serviços prestados. 
+                Disponibilizamos também para nossos técnicos kits completos com ferramentas adequadas e Equipamentos de Proteção Coletiva e
+                individual (EPI’s e EPC’s), sempre respeitando as regras estabelecidas pela Norma Regulamentadora (NR10). <br><br>
+            </ol>
+        </div>
+        <div>
+            <ol name="contato"> <br> <!--Descritivo de cada item da barra de navegação-->
+                CONTATO<br>
+                <br>
+                Rua dos Carvalhos, 1339 <br>
+                Bairro Bela Vista (Loteamento Boa Vista II)<br>
+                Pinhalzinho/SC CEP: 89870-000<br>
+                Fone: (49)9 9904-6087<br>
+                CNPJ: 27.861.669/0001-24<br>
+                E-mail: topluzpzo@hotmail.com<br><br>
+            </ol>
+        </div>
+    </div><!-- Fim do footer do site-->
+</body>
+</html>
